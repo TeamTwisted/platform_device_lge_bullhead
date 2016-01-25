@@ -31,11 +31,10 @@ ENABLE_CPUSETS := true
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/lge/bullhead
-TARGET_KERNEL_CONFIG := bullhead_defconfig
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_GCC_VERSION_ARM64 := 5.3-kernel
+TARGET_KERNEL_SOURCE := kerne/lge/bullhead
+TARGET_KERNEL_CONFIG := phasma_defconfig
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb 
 
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
