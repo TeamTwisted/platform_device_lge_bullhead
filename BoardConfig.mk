@@ -154,10 +154,3 @@ EXTENDED_FONT_FOOTPRINT := true
 
 -include vendor/lge/bullhead/BoardConfigVendor.mk
 
-# Twisted optimizations
-export CLANG_O3 := true
-export STRICT_ALIASING := true
-export GRAPHITE_OPTS := true
-export USE_O3_OPTIMIZATIONS := true
-export ENABLE_GCCONLY := true
-export CORTEX_TUNINGS := true
